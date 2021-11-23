@@ -15,7 +15,7 @@ _Create a cube(Game object) and put this script on it._
 
 <br/>
 
-- 1) Add Namespace:  
+- Add Namespace:  
 
 ```csharp
 using Act.Scripts.OnChanged;
@@ -23,7 +23,7 @@ using Act.Scripts.OnChanged;
 
 <br/>
 
-- 2) Replace type to `ObservableVariable<T>`  _(T is your type.  eg: int, bool, string, float etc.. You can even use other data types ("Color", "Vector3"), not only standart data types.)_
+- Replace type to `ObservableVariable<T>`  _(T is your type.  eg: int, bool, string, float etc.. You can even use other data types ("Color", "Vector3"), not only standart data types.)_
 
 ```csharp
 ObservableVariable<int> health;
@@ -31,7 +31,7 @@ ObservableVariable<int> health;
 
 <br/>
 
-- 3) Define Logger _(When the value of the variable you specified changes, it shows the old and new values in the console.)_
+- Define Logger _(When the value of the variable you specified changes, it shows the old and new values in the console.)_
 
 ```csharp
 ObservableLogger logger;
@@ -39,7 +39,7 @@ ObservableLogger logger;
 
 <br/>
 
-- 4) Write in the "Start()" function:
+- Write in the "Start()" function:
 
 ```csharp
 void Start()
@@ -70,7 +70,7 @@ private void Health_OnChanged(object obj)
 
 All our code will look like below.
 
-   ```csharp
+ ```csharp
    ObservableVariable<int> health;
     ObservableLogger logger;
 
@@ -96,4 +96,4 @@ All our code will look like below.
             health.Value -= 10;
     }
 	
-    ```
+ ```
